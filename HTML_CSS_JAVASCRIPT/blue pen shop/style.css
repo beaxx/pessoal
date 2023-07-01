@@ -12,6 +12,7 @@
     --white:#fff;
     --dark: #0f0f0f;
     --wblue: #7287f3;
+    --dblue: #27279b;
     
 }
 
@@ -29,6 +30,7 @@ body{
     width: 100%;
     background: var(--white);
     transition: all 0.5s;
+    position: fixed;
 }
 
 .navigation .logo{
@@ -52,10 +54,132 @@ body{
 }
 
 .navigation ul li a:hover{
-    color: var(--wblue);
+    color: var(--dblue);
 }
 
 .navigation i{
     cursor: pointer;
     font-size: 1.3rem;
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--blue);
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+.home_text{
+    max-width: 37rem;
+}
+
+.home_text .text_h4{
+    font-size: 1.5rem;
+    color:var(--blue);
+    margin-bottom: 1rem;
+}
+
+.home_text .text_h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4.4rem;
+}
+
+.home_text p{
+    margin-bottom: 3rem;
+}
+
+.home_btn{
+    padding:15px 45px;
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.home_btn:hover{
+    background: var(--dblue)
+}
+
+.home_img img{
+    width: 100%;
+}
+
+@media(max-width:785px){
+    .navigation{
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2){
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height:100%;
+        flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: all 0.3s;
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+    .nav-item{
+        margin: 16px 0;
+
+    }
+    .home{
+        padding: 100px 2px;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+    }
+    .home .text_h4{
+        font-size: 15px;
+    }
+    .home .text_h1{
+        font-size:2.5rem;
+        line-height: 3rem;
+    }
+    .home p{
+        font-size: 15px;
+    }
+    .home img{
+        width: 125%;
+    }
 }

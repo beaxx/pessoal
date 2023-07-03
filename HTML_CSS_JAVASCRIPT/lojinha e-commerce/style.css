@@ -2,26 +2,11 @@ body{
     background-color: rgb(232, 218, 246);
 }
 
-.menu{
-    width: 19%;
-}
-
-.menu a{
-    background-color: rgb(255, 255, 255);
-    color:rgb(0, 0, 0);
-    display:block;
-    padding: 1.3%;
-    text-decoration: none;
-    font-size: 140%;
-}
-.menu a:hover{
-   background-color:rgb(234, 230, 241)
-}
-
 .img1{
     width: 16%;
     height: 16%;
     overflow: hidden;
+    position: relative;
 }
 .img1 img{
 width: 100%;

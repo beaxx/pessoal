@@ -1,12 +1,84 @@
-body{
-    background-color: rgb(255, 255, 255);
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+:root{
+    --pp : rgb(225, 185, 253);
+    --dk : #160217;
+    --wt : #fff;
+    --wdk : #6f0075;
 }
 
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Lora', serif;
+}
+
+.menu{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 90px;
+    width: 100%;
+    background: var(--wt);
+    box-shadow: 0 0.2rem 0.6rem #c7adda;
+}
+
+.menu ul{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 6rem;
+    
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: var(--dk);
+}
+
+.menu ul li a:hover{
+    color: var(--wdk);
+}
+
+i{
+    cursor: pointer;
+}
+
+.pesquisa{
+    background-color: #e5deeb;
+    padding:  8px;
+    border-radius: 20px;
+}
+
+.pesquisa1{
+    border: none;
+    border-radius: 20px;
+    background-color:#e5deeb;
+}
+
+/* MAIN */
+.main{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    padding: 0 9%;
+}
+
+.text_main h1{
+    font-size: 320%;
+}
+.img_main img{
+ width: 100%;
+ margin-bottom: -8rem;
+}
+/* PRODUTOS */
 .img1{
     width: 16%;
     height: 16%;
     overflow: hidden;
-    position: relative;
 }
 .img1 img{
 width: 100%;

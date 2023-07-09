@@ -8,4 +8,3 @@ alguns projetos explicados :
 
 - media/prova : são 2 proetos diferentes, um em JAVAe o outro em PYTHON. Geralmente eram ativdades assim que fazíamos para aprender algumas funções como: esrutura de repetição, leitura de informações e variáveis.
 
-- Aquestre app : foi um protótipo de aplicativo desenvolvido para um projeto de Design Digital, link para acessar : https://www.figma.com/community/file/1253455824476778783
